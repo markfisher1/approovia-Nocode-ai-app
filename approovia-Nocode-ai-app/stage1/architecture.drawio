@@ -1,0 +1,13 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="Page-1" id="XdG7leDaod9skSdQ88rH">
+    <mxGraphModel dx="1090" dy="593" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QNgCjxgyxl21tunczGjD-1" value="[Developer]&#xa;    ↓&#xa;[GitLab CI Runner]&#xa;    ↓&#xa;[Run Unit Tests]&#xa;    ↓&#xa;[Build Docker Image]&#xa;    ↓&#xa;[Push to Harbor Registry]&#xa;    ↓&#xa;[SSH to VMs]&#xa;    ↓&#xa;[Pull Image &amp; Restart Containers]" style="text;whiteSpace=wrap;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="150" y="60" width="430" height="400" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

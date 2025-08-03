@@ -1,0 +1,14 @@
+# .gitignore
+__pycache__/
+*.pyc
+.env
+*.log
+*.swp
+.DS_Store
+.idea/
+.vscode/
+node_modules/
+*.tar
+*.zip
+*.bak
+docker-compose.override.yml
