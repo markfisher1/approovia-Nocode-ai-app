@@ -1,0 +1,24 @@
+
+services:
+  registry:
+    image: registry:2
+    container_name: local-registry
+    ports:
+      - "5000:5000"
+    restart: always
+
+  service-a:
+    build:
+      context: ./service-a
+    container_name: service-a
+    ports:
+      - "8001:8000"
+    restart: always
+
+  service-b:
+    build:
+      context: ./service-b
+    container_name: service-b
+    ports:
+      - "8002:8000"
+    restart: always

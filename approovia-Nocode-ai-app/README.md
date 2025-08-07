@@ -216,13 +216,29 @@ Enable systemd service for persistence:
 
     sudo systemctl enable wg-quick@wg0
 
-📁 Deliverables:
+📁 /stage2/wireguard/
+
+
 
 Each peer’s wg0.conf
 
-Network diagram (draw.io or hand sketch)
+Network diagram 
+
+stage2/
+└── docker/
+    ├── service-a/
+    │   ├── app.py
+    │   ├── Dockerfile
+    ├── service-b/
+    │   ├── app.py
+    │   ├── Dockerfile
+    ├── build.sh
+    ├── push.sh
+    └── deploy.sh
+
 
 🔹 Step 2.2: Docker Deployment
+
 Languages:
 
 Write minimal apps in Python or Go:
@@ -243,11 +259,17 @@ push.sh: Push to registry
 
 deploy.sh: SSH to VMs and run containers
 
-📁 Deliverables:
+📁 Deliverables: /stage2/docker/
 
 Dockerfile, build.sh, push.sh, deploy.sh
 
+
+![Docker ps](image-1.png)
+
+
 Mention the local registry used (e.g., localhost:5000)
+
+![Docker deployment](image.png)
 
 🔹 Step 2.3: HAProxy Reverse Proxy
 
@@ -269,7 +291,7 @@ Health checks
 
 SSL (self-signed or Let's Encrypt steps)
 
-📁 Deliverables:
+📁 Deliverables: /stage2/haproxy/haproxy.cfg
 
 haproxy.cfg
 
